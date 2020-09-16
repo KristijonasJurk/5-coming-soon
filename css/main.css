@@ -16,34 +16,48 @@ body * {
 }
 .hero-row {
     display: inline-block;
-    width: 600px*;
+    width: 600px;
     margin-left: calc((100% - 600px) / 2);
+    text-align: center;
 }
+        .hero-row >.logo {
+
+        }
+        .title {
+
+        }
+        .sub-title {
+
+        }
+
     .row {
         display: inline-block;
         width: 1000px;
         margin-left: calc((100% - 1000px) / 2);
+        background-color: teal;
     }
         .left-column {
-            display: inline-block;
             width: 50%;
             float: left;
+            background-color: teal;
         }
         .right-column {
-            display: inline-block;
             width: 40%;
             float: right;
+            background-color: teal;
         }
         .socials {
             display: inline-block;
             width: 100%;
-            background-color: violet;
+            float: left;
+            border-bottom: 1px solid #ffffff;
         }
         .texts {
             display: inline-block;
             width: 600px;
-            margin-left: calc((100% - 600px) / 2)*;
-            background-color: red;
+            margin-left: calc((100% - 600px) / 2);   
+            float: left;
+            background-color: teal;
         }
 
 .bg-blue {
@@ -55,4 +69,59 @@ body * {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+}
+@media (max-width: 1100px) {
+    .row {
+        width: 800px;
+        margin-left: calc ((100% - 800px) / 2);
+        background-color: green;
+    }   
+@media (max-width: 900px) {
+    .row {
+        width: 600px;
+        margin-left: calc ((100% - 600px) / 2);
+        background-color: green;
+    }
+    .left-column {
+        width: 100%;
+        background-color: teal;
+        margin-bottom: 60px;
+    }
+    .right-column {
+        width: 100%;
+        background-color: hotpink;
+        float: left;
+}
+@media (max-width: 700px) {
+    .hero-row {
+        width: 400px;
+        margin-left: calc((100% - 400px) / 2);
+    }
+    .row {
+        width: 400px;
+        margin-left: calc((100% - 400px) / 2);
+    }
+    .footer-texts {
+        width: 400px;
+        margin-left: calc((100% - 400px) / 2);
+    }
+}
+@media (max-width: 500px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }    
+    .hero-row {
+        width: 100%;
+        margin-left: 0;
+    } 
+     .row {
+        width: 100%;
+        margin-left: 0;
+        background-color: green;
+    }
+   .texts {
+        width: 100%;
+        margin-left: 0;
+        background-color: teal;
 }
