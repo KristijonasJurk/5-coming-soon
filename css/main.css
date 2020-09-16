@@ -71,6 +71,7 @@ body * {
             width: 100%;
             float: left;
             border-bottom: 1px solid #ffffff;
+            text-align: center;
         }
         .texts {
             display: inline-block;
@@ -78,6 +79,7 @@ body * {
             margin-left: calc((100% - 600px) / 2);   
             float: left;
             background-color: teal;
+            text-align: center;
         }
 
 .bg-blue {
