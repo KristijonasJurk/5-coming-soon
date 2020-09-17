@@ -3,7 +3,7 @@
 }
 .hero-bg {
     background-image: url(../img/background.png);
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     background-size: cover;
     background-position: bottom center;
     background-attachment: fixed;
@@ -15,15 +15,16 @@
     padding-top: 60px;
     padding-bottom: 60px;
 }
-.hero-row {
-    display: inline-block;
-    width: 600px;
-    margin-left: calc((100% - 600px) / 2);
-    text-align: center;
+    .hero-row {
+        display: inline-block;
+        width: 600px;
+        margin-left: calc((100% - 600px) / 2);
+        text-align: center;
 }
         .hero-row > .logo {
-            height: 80px;
+            height: 40px;
             width: 100%;
+            margin-bottom: 60px;
             object-fit: contain;
             object-position: center;
         }
@@ -34,8 +35,8 @@
             margin-bottom: 30px;
         }
         .sub-title {
-            font-size: 20px;
-            line-height: 25px;
+            font-size: 22px;
+            line-height: 30px;
             margin-bottom: 45px;
         }
         .hero-row > form {
@@ -70,94 +71,93 @@
             display: inline-block;
             width: 100%;
             float: left;
-            border-bottom: 1px solid #ffffff;
-            text-align: center;
             padding-top: 10px;
             padding-bottom: 10px;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #fff;
+            text-align: center;
         }
-        .socials > a {
-            padding: 15px;
-            text-decoration: none;
-            color: #ffffff;
-            line-height: 20px;
-            width: 40px;
-            margin: 10px;
-        }    
-        .socials > a:hover {
-            background-color: red;
-            border-radius: 50%;
-        }
+            .socials > a {
+                padding: 10px;
+                text-decoration: none;
+                color: #ffffff;
+                line-height: 20px;
+                width: 40px;
+                margin: 10px;
+            }    
+                .socials > a:hover {
+                    background-color: #fff;
+                    color: #03A9F5;
+                    border-radius: 50%;
+                }
         .texts {
             display: inline-block;
             width: 600px;
             margin-left: calc((100% - 600px) / 2);   
-            margin-top: 30px;
             float: left;
             text-align: center;
             color: #ffffff;
             font-size: 18px;
         }
-        .texts > .logo {
-            margin-top: 30px;
-            height: 40px;
-        }
-
-        .copyright {
-            display: inline-block;
-            width: 100%;
-            height: 40px;
-            object-fit: contain;
-            object-position: center;
-            margin-bottom: 30px;
-        }
-
-            .copyright > .text {
+            .texts > .logo {
                 display: inline-block;
-                float: left;
-                
+                width: 100%;
+                height: 40px;
+                object-fit: contain;
+                object-position: center;
+                margin-bottom: 30px;
             }
-                .copyright > .textborders {
+
+            .copyright {
+                display: inline-block;
+            }
+
+                .copyright > .text {
+                    display: inline-block;
+                    float: left;
+                }
+                .copyright > .text.borders {
                     margin-left: 20px;
                     margin-right: 20px;
                     position: relative;
                 }
-                .copyright > .textborders::before {
+                .copyright > .text.borders::before {
                     display: inline-block;
                     content: '';
                     width: 1px;
-                    height: 16px;
+                    height: 10px;
                     background-color: #ffffff;
                     position: absolute;
                     left: -9px;
                     top: 6px;
                 }
-                .copyright > .textborders::after {
+                .copyright > .text.borders::after {
                     display: inline-block;
                     content: '';
                     width: 1px;
-                    height: 16px;
+                    height: 10px;
                     background-color: #ffffff;
                     position: absolute;
-                    left: -9px;
+                    right: -9px;
                     top: 6px;
                 }
-        .texts > p {
+            .texts > p {
 
-        }
+            }
 
-        .texts > a {
-            color: #ffffff;
-        }
+            .texts a {
+                color: #ffffff;
+            }
 
 @media (max-width: 1100px) {
     .row {
         width: 800px;
-        margin-left: calc ((100% - 800px) / 2);
+        margin-left: calc((100% - 800px) / 2);
     }   
 @media (max-width: 900px) {
     .row {
         width: 600px;
-        margin-left: calc ((100% - 600px) / 2);
+        margin-left: calc((100% - 600px) / 2);
     }
     .left-column {
         width: 100%;
@@ -180,6 +180,16 @@
         width: 400px;
         margin-left: calc((100% - 400px) / 2);
     }
+        .copyright > .texts {
+        width: 100%;
+        }
+        .copyright > .texts.borders {
+        margin: 0;
+        }
+            .copyright > .texts.borders::before,
+            .copyright > .texts.borders::after {
+                display: none;
+            }
 }
 @media (max-width: 500px) {
     .container {
