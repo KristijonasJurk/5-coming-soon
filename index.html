@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./css/form.css">
     <link rel="stylesheet" href="./css/clock.css">
     <link rel="stylesheet" href="./css/mouse.css">
+    <link rel="stylesheet" href="./css/button.css">
     <link rel="stylesheet" href="./css/progress bar.css">
     <!--custom css file-->
     <link rel="stylesheet" href="./css/main.css">
@@ -42,7 +43,9 @@
                 </div>
             </div>
             <form class="form">Subscribe form</form>
-            <div class="mouse">mouse</div>
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
         </div>
     </div>
     <main class="container">
@@ -50,23 +53,49 @@
             <div class="left-column">
                 <h2 class="column-title">About startup</h2>
                 <p class="column-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat corrupti voluptatum unde recusandae similique iste laborum eum autem suscipit ducimus.</p>
-                <div class="progress bar">
-                    progress bar
+                
+                <div class="progress-bar">
+                    <div class="top">
+                        <div class="label">UX design</div>
+                        <div class="percentage">90%</div>
                 </div>
-                <div class="progress bar">
-                    progress bar
-                </div>
-                <div class="progress bar">
-                    progress bar
+                <div class="bottom">
+                    <div class="progress" style="width: 90%;">
+                        <div class="bar"></div>
+                    </div>
                 </div>
             </div>
-            <div class="right-column">
-                <h2 class="column-title">Have any questions?</h2>
-                <p class="column-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea illum et expedita blanditiis quaerat consectetur id non quam excepturi!</p>
-                <form class="form">
-                    send message form
-                </form>
+               
+                <div class="progress-bar">
+                    <div class="top">
+                        <div class="label">Web design</div>
+                        <div class="percentage">86%</div>
+                </div>
+                <div class="bottom">
+                    <div class="progress" style="width: 86%;">
+                        <div class="bar"></div>
+                    </div>
+                </div>
             </div>
+
+                <div class="progress-bar">
+                    <div class="top">
+                        <div class="label">Web development</div>
+                        <div class="percentage">86%</div>
+                </div>
+                <div class="bottom">
+                    <div class="progress" style="width: 86%;">
+                        <div class="bar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-column">
+            <h2 class="column-title">Have any questions?</h2>
+            <p class="column-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea illum et expedita blanditiis quaerat consectetur id non quam excepturi!</p>
+            <form class="form">
+                <div class="btn">send message form</div>
+            </form>
         </div>
     </main>
     <footer class="container bg-blue">
@@ -89,6 +118,7 @@
                 </div>
                 <p>Lorem ipsum dolor sit amet <a href="#">200+</a> consectetur adipisicing elit. At ipsam dicta illo! Laboriosam earum aut <a href="#">Matrox</a> iste voluptatibus ipsam aliquam fugiat.</p>
             </div>
+            <a href="#" class="btn round back-to-top fa fa-angle-up"></a>
         </div>
     </footer>
 </body>

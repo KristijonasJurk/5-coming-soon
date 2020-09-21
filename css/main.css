@@ -49,6 +49,7 @@
         display: inline-block;
         width: 1000px;
         margin-left: calc((100% - 1000px) / 2);
+        position: relative;
     }
         .left-column {
             width: 50%;
@@ -148,6 +149,16 @@
             .texts a {
                 color: #ffffff;
             }
+        .back-to-top {
+            padding: 10px;
+            background-color: red;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 50%;
+            position: absolute;
+            margin-top: -20px;
+            
+        }
 
 @media (max-width: 1100px) {
     .row {
