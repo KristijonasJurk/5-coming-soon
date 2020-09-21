@@ -1,0 +1,16 @@
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    line-height: 20px;
+    background-color: red;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+}
+    .btn.round {
+        border-radius: 25px;
+    }
+    .btn.fa {
+        padding: 20px;
+        width: 
+    }
